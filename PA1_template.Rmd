@@ -102,7 +102,8 @@ hist(step_original, xlab = "Steps per Day", main = "Total steps taken each day (
 hist(step_filled, xlab = "Steps per Day", main = "Total steps taken each day (filled data)", breaks=10, col = "red",ylim=c(0,25))
 ```
 
-* The frequency of low step number (0~2000) is decreased, while the frequency of middle step number (10000~12000) is increased!
+* The frequency of low step number (0~2000) is decreased!
+* The frequency of middle step number (10000~12000) is increased!
 
 ```{r,echo = TRUE}
 temp_mean_filled <- mean(step_filled)

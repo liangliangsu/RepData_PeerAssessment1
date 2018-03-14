@@ -157,8 +157,8 @@ Reproducible Research: Assessment 1
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
--   The frequency of low step number (0~2000) is decreased, while the
-    frequency of middle step number (10000~12000) is increased!
+-   The frequency of low step number (0~2000) is decreased!
+-   The frequency of middle step number (10000~12000) is increased!
 
 <!-- -->
 
