@@ -202,7 +202,7 @@ Reproducible Research: Assessment 1
     step_filled <- aggregate(steps ~ interval + datetype, data=data_filled, mean)
     library(ggplot2)
     ggplot(step_filled, aes(interval, steps)) + 
-        geom_line() + 
+        geom_line(color = 'blue') + 
         facet_grid(datetype ~ .) +
         xlab("Interval") + 
         ylab("Avarage number of steps")

@@ -1,3 +1,7 @@
+---
+output: md_document
+---
+
 # Reproducible Research: Assessment 1
 
 ### Loading and preprocessing the data
@@ -127,11 +131,11 @@ data_filled$datetype<-factor(data_filled$datetype)
 ```
 
 1. Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.
-```{r}
+```{r,fig.height=6}
 step_filled <- aggregate(steps ~ interval + datetype, data=data_filled, mean)
 library(ggplot2)
 ggplot(step_filled, aes(interval, steps)) + 
-    geom_line() + 
+    geom_line(color = 'blue') + 
     facet_grid(datetype ~ .) +
     xlab("Interval") + 
     ylab("Avarage number of steps")
